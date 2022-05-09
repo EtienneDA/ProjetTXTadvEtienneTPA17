@@ -17,9 +17,11 @@ public class PlayActivity1 extends AppCompatActivity {
 
     public void onClickG(View view) {
         Play2 = new Intent(PlayActivity1.this, PlayActivity2.class);
+        startActivity(Play2);
     }
 
     public void onClickD(View view) {
         Play2 = new Intent(PlayActivity1.this, PlayActivity2.class);
+        startActivity(Play2);
     }
 }
