@@ -33,6 +33,7 @@
         android:layout_marginEnd="124dp"
         android:layout_marginBottom="103dp"
         android:backgroundTint="#390303"
+        android:onClick="onClickStart"
         android:text="Survivre!"
         android:textSize="20sp"
         android:textStyle="bold"

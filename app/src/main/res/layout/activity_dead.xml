@@ -31,5 +31,5 @@
         android:onClick="onClickRetour"
         android:text="Retour au début"
         tools:layout_editor_absoluteX="119dp"
-        tools:layout_editor_absoluteY="588dp" />
+        tools:layout_editor_absoluteY="587dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

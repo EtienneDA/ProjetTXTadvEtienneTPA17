@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#670404"
-        android:onClick="onClickG"
+        android:onClick="onClickD"
         android:text="Choisir"
         tools:layout_editor_absoluteX="260dp"
         tools:layout_editor_absoluteY="599dp" />
