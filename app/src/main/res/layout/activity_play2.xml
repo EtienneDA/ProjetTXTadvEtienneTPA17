@@ -5,30 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000000"
-    tools:context=".PlayActivity1">
-
-    <Button
-        android:id="@+id/btnChoixG"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#750505"
-        android:onClick="onClickG"
-        android:text="Choisir"
-        tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="599dp" />
-
-    <Button
-        android:id="@+id/btnChoixD"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#670404"
-        android:onClick="onClickG"
-        android:text="Choisir"
-        tools:layout_editor_absoluteX="260dp"
-        tools:layout_editor_absoluteY="599dp" />
+    tools:context=".PlayActivity2">
 
     <TextView
-        android:id="@+id/txtStory"
+        android:id="@+id/txtStory2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -44,7 +24,26 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txtChoixG"
+        android:id="@+id/txtChoixD2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ChoixD"
+        android:textColor="#FF0000"
+        tools:layout_editor_absoluteX="287dp"
+        tools:layout_editor_absoluteY="536dp" />
+
+    <Button
+        android:id="@+id/btnChoixG2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#750505"
+        android:onClick="onClickG"
+        android:text="Choisir"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="599dp" />
+
+    <TextView
+        android:id="@+id/txtChoixG2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ChoixG"
@@ -52,12 +51,13 @@
         tools:layout_editor_absoluteX="84dp"
         tools:layout_editor_absoluteY="536dp" />
 
-    <TextView
-        android:id="@+id/txtChoixD"
+    <Button
+        android:id="@+id/btnChoixD2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ChoixD"
-        android:textColor="#FF0000"
-        tools:layout_editor_absoluteX="287dp"
-        tools:layout_editor_absoluteY="536dp" />
+        android:backgroundTint="#670404"
+        android:onClick="onClickD"
+        android:text="Choisir"
+        tools:layout_editor_absoluteX="260dp"
+        tools:layout_editor_absoluteY="599dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
