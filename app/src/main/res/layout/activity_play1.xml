@@ -9,23 +9,27 @@
 
     <Button
         android:id="@+id/btnChoixG"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="84dp"
         android:backgroundTint="#750505"
         android:onClick="onClickG"
         android:text="Choisir"
-        tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="599dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnChoixD"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="84dp"
         android:backgroundTint="#670404"
         android:onClick="onClickD"
         android:text="Choisir"
-        tools:layout_editor_absoluteX="260dp"
-        tools:layout_editor_absoluteY="599dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/txtStory"
@@ -47,17 +51,25 @@
         android:id="@+id/txtChoixG"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="536dp"
+        android:layout_marginBottom="44dp"
         android:text="ChoixG"
         android:textColor="#FF0000"
-        tools:layout_editor_absoluteX="84dp"
-        tools:layout_editor_absoluteY="536dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btnChoixG"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/txtChoixD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="536dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="44dp"
         android:text="ChoixD"
         android:textColor="#FF0000"
-        tools:layout_editor_absoluteX="287dp"
-        tools:layout_editor_absoluteY="536dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btnChoixD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
