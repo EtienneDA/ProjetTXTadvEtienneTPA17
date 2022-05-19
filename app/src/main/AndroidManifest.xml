@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjetTXTadvEtienneTPA17">
         <activity
+            android:name=".EscapeActivity"
+            android:exported="false" />
+        <activity
             android:name=".DeadActivity"
             android:exported="false" />
         <activity
