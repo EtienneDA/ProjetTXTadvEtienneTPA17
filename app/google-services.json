@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "585221603900",
+    "project_id": "fir-txtadv",
+    "storage_bucket": "fir-txtadv.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:585221603900:android:02ef263c4ba9ae5427b939",
+        "android_client_info": {
+          "package_name": "com.example.projettxtadvetiennetpa17"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "585221603900-ioc8gaeln3lvkjr8cf7km7bh5g3pbh05.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJ8v2k32d11QgP3yjMR6-II1joAN7LIPM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "585221603900-ioc8gaeln3lvkjr8cf7km7bh5g3pbh05.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

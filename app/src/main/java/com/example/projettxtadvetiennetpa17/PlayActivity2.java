@@ -16,12 +16,12 @@ public class PlayActivity2 extends AppCompatActivity {
     }
 
     public void onClickG(View view) {
-        dead = new Intent (PlayActivity2.this, DeadActivity.class);
+        dead = new Intent(PlayActivity2.this, DeadActivity.class);
         startActivity(dead);
     }
 
     public void onClickD(View view) {
-        dead = new Intent (PlayActivity2.this, DeadActivity.class);
+        dead = new Intent(PlayActivity2.this, DeadActivity.class);
         startActivity(dead);
     }
 }
