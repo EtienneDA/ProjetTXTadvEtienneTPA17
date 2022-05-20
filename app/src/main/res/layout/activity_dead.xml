@@ -15,7 +15,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="250dp"
-        android:text="Vous êtes mort!"
+        android:text="Vous êtes mort... le noir vous envahis pendant que vous prenez vos dernierres bouffées d'air"
         android:textColor="#FF0000"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
