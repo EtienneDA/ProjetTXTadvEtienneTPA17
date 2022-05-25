@@ -33,43 +33,40 @@
 
     <TextView
         android:id="@+id/txtStory"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="60dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginEnd="60dp"
         android:layout_marginBottom="250dp"
         android:text="Story"
         android:textColor="#FF0000"
-        android:textSize="20sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.31" />
 
     <TextView
         android:id="@+id/txtChoixG"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="536dp"
+        android:layout_marginStart="85dp"
         android:layout_marginBottom="44dp"
         android:text="ChoixG"
         android:textColor="#FF0000"
         app:layout_constraintBottom_toTopOf="@+id/btnChoixG"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/txtChoixD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="536dp"
         android:layout_marginEnd="80dp"
         android:layout_marginBottom="44dp"
         android:text="ChoixD"
         android:textColor="#FF0000"
         app:layout_constraintBottom_toTopOf="@+id/btnChoixD"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

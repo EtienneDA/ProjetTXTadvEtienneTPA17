@@ -1,5 +1,7 @@
 package modele;
 
+import static modele.TxtDBHelper.*;
+
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -25,15 +27,18 @@ public class DbAdapter {
         db.close();
     }
 
-    public List<String> findStory(int _id) {
+    public ContentM findStory(int id) {
         openBd();
-        db = dbHelper.getReadableDatabase();
-        Cursor cursorS = db.rawQuery("SELECT story, choixg, choixd FROM content WHERE _id = "+_id, null);
-        List<String> storys = new ArrayList<String>();
-        storys.add(cursorS.getString(0));
-        storys.add(cursorS.getString(1));
-        storys.add(cursorS.getString(2));
+        db = dbHelper.getWritableDatabase();
+        Cursor cursor = db.rawQuery("SELECT * FROM " + TABLE_1 + " WHERE " + COL_ID + "=" + id, null, null);
+        cursor.moveToFirst();
+        ContentM con = new ContentM();
+        con.set_id(id);
+        con.setStory(cursor.getString(cursor.getColumnIndexOrThrow(COL_STORY)));
+        con.setChoixg(cursor.getString(cursor.getColumnIndexOrThrow(COL_CHOIXG)));
+        con.setChoixd(cursor.getString(cursor.getColumnIndexOrThrow(COL_CHOIXD)));
+        cursor.close();
         fermerBd();
-        return storys;
+        return con;
     }
 }

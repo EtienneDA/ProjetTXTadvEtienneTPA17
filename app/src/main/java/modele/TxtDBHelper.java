@@ -1,5 +1,7 @@
 package modele;
+import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -23,17 +25,24 @@ public class TxtDBHelper extends SQLiteOpenHelper {
                     COL_STORY + " TEXT, " +
                     COL_CHOIXG + " TEXT, " +
                     COL_CHOIXD + " TEXT)";
-    public static final String INSERT_1 = "INSERT INTO content (_id, story, choixg, choixd) VALUES (1, '"+con.story1+"', '"+con.choixg1+"', '"+con.choixd1+"' );";
+    public static final String INSERT_1 = "INSERT INTO content (_id, story, choixg, choixd) VALUES ('1', '"+con.story1+"', '"+con.choixg1+"', '"+con.choixd1+"')";
 
     public TxtDBHelper(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
     }
 
 
+
     @Override
     public void onCreate(SQLiteDatabase db) {
     db.execSQL(CONTENT_DDL);
     db.execSQL(INSERT_1);
+    //ContentValues values1 = new ContentValues();
+    //values1.put(COL_ID, 1);
+    //values1.put(COL_STORY, con.story1);
+    //values1.put(COL_CHOIXG, con.choixg1);
+    //values1.put(COL_CHOIXD, con.choixd1);
+    //db.insert(TABLE_1, null,values1);
     }
 
     @Override
@@ -41,4 +50,5 @@ public class TxtDBHelper extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_1);
         onCreate(db);
     }
+
 }
