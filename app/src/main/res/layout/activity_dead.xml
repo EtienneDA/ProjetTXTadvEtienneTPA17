@@ -9,13 +9,13 @@
 
     <TextView
         android:id="@+id/txtStory3"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="250dp"
-        android:text="Vous êtes mort... le noir vous envahis pendant que vous prenez vos dernierres bouffées d'air"
+        android:text="Vous êtes mort... le noir vous envahis pendant que vous prenez vos"
         android:textColor="#FF0000"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
