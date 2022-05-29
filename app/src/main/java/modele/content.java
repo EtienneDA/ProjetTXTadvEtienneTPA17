@@ -88,8 +88,8 @@ public class content {
             " tes collègues n’avaient pas de longs bras en pointe couvert de sang. Certains ont les yeux pointés vers toi, mais n’ont pas l’air de te voir. " +
             "Tu peux déduire qu’ils sont aveugles, mais ils bloquent quand même le chemin." +
             " Que faire? Les distraire ou passer entre eux?";
-    public String choixg9= "Passer entre ";
-    public String choixd9= "Distraire";
+    public String choixg9= " Distraire";
+    public String choixd9= "Passer entre";
 
     public String story10= "Tu rentres dans la salle d’expérimentation, tous les miroirs montrant chaque angle possible. Tu fermes la porte et après une grande inspiration, " +
             "tu ouvres la lumière et tes yeux. Pour une seconde, tu la vois. La créature semble être la taille d’un grand chien avec une douzaine de pattes. Avec son corps émacié," +
@@ -142,8 +142,8 @@ public class content {
             "Cependant, si la situation empire au point d’être un danger pour la population, une contingence reste en place. Une bombe nucléaire sous le laboratoire," +
             " pour vaporiser absolument tout ce qui existe dedans ou dans un rayon d’un kilomètre. " +
             "Il faut que tu sortes avant qu’elle soit activée. Tu continues, ignorant les mouvements au coin de tes yeux. ";
-    public String choixg14= "Marcher";
-    public String choixd14= "Courir";
+    public String choixg14= "Courir";
+    public String choixd14= "Marcher";
 
     public String story15= "Tu essayes de passer entre les statues, tranquillement mais surement, tu fais du progrès. Chaque petit frottement sur le plancher ou " +
             "respiration trop intense et tu peux voir quelques têtes bouger. Le progrès est lent et terrifiant. La douleur de tes coupures te fait gémir involontairement." +
