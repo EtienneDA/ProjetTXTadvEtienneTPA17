@@ -8,6 +8,7 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
     private Intent StartIntent;
+    private int progress = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClickStart(View view) {
         StartIntent = new Intent(MainActivity.this, PlayActivity1.class);
+        StartIntent.putExtra("progress", progress);
         startActivity(StartIntent);
+
     }
 }
