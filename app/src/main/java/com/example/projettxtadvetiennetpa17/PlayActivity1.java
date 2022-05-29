@@ -14,11 +14,14 @@ public class PlayActivity1 extends AppCompatActivity {
     private TextView txtStory, txtChoixg, txtChoixd;
     private Intent NextAct;
     private DbAdapter dbAdapter;
+    private Intent input;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play1);
         dbAdapter = new DbAdapter(PlayActivity1.this);
+        input = getIntent();
         setWidgets();
         afficherStory();
     }
@@ -28,11 +31,9 @@ public class PlayActivity1 extends AppCompatActivity {
         txtStory = findViewById(R.id.txtStory);
         txtChoixg = findViewById(R.id.txtChoixG);
         txtChoixd = findViewById(R.id.txtChoixD);
-
     }
 
     private void afficherStory() {
-        Intent input = getIntent();
         int progres = input.getIntExtra("progress", 0);
         ContentM con = dbAdapter.findStory(progres);
             txtStory.setText(con.getStory());
@@ -41,7 +42,6 @@ public class PlayActivity1 extends AppCompatActivity {
     }
 
     public void onClickG(View view) {
-        Intent input = getIntent();
         int progres = input.getIntExtra("progress", 0);
         int progress = 0;
         if (progres == 1) {
@@ -72,7 +72,6 @@ public class PlayActivity1 extends AppCompatActivity {
     }
 
     public void onClickD(View view) {
-        Intent input = getIntent();
         int progres = input.getIntExtra("progress", 0);
         int progress = 0;
         if (progres == 1) {
